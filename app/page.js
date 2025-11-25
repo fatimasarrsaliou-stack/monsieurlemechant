@@ -41,7 +41,7 @@ export default function Home() {
       <Image 
         src="/messi.jpeg" 
         width={1000}
-        height={1000}
+        height={950}
         alt="Chat Messi"
         className="rounded-3xl shadow-2xl float"
       />
@@ -62,6 +62,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
