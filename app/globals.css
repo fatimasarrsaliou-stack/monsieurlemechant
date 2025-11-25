@@ -1,1 +1,20 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-night text-white;
+}
+
+.section {
+  @apply py-20 px-6 md:px-16 lg:px-32;
+}
+
+.gold {
+  color: #D4AF37;
+}
+
+.btn-primary {
+  @apply bg-gold text-black px-6 py-3 rounded-md font-semibold hover:bg-yellow-500 transition;
+}
