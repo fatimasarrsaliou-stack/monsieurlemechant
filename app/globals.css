@@ -1,20 +1,48 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* --- GLOBAL THEME --- */
 body {
-  @apply bg-night text-white;
+  @apply bg-[#050A1A] text-white antialiased;
 }
 
+/* Premium Gold */
+.gold {
+  color: #FFD56B;
+}
+
+.gradient-title {
+  background: linear-gradient(90deg, #FFD56B 0%, #F8C341 50%, #FFE49A 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Sections spacing */
 .section {
   @apply py-20 px-6 md:px-16 lg:px-32;
 }
 
-.gold {
-  color: #D4AF37;
+/* Smooth fade-in for the entire site */
+.fade-in {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
-.btn-primary {
-  @apply bg-gold text-black px-6 py-3 rounded-md font-semibold hover:bg-yellow-500 transition;
+/* Glass Navbar */
+.nav-glass {
+ @apply bg-white/10 backdrop-blur-2xl shadow-xl border-b border-white/20;
+}
+
+/* Floating animation for the hero cat */
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
