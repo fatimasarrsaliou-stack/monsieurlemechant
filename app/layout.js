@@ -1,20 +1,15 @@
-import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import ServiceCard from "../../components/ServiceCard";
 
-export const metadata = {
-  title: "Entreprise Pro",
-  description: "Site professionnel moderne",
-};
-
-export default function RootLayout({ children }) {
+export default function Services() {
   return (
-    <html lang="fr">
-      <body className="bg-night text-white">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <div className="pt-32 section">
+      <h1 className="text-4xl font-bold mb-10">Nos Services</h1>
+
+      <div className="grid md:grid-cols-3 gap-10">
+        <ServiceCard title="Développement Web" img="/service1.jpg" />
+        <ServiceCard title="Consulting" img="/service2.jpg" />
+        <ServiceCard title="Formations" img="/service3.jpg" />
+      </div>
+    </div>
   );
 }
